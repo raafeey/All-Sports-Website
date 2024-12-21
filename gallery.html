@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Sports Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1d1927;
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #e9e32d;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        nav {
+            background-color: #1d1927;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #e9e32d;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            gap: 30px;
+            margin-top: 20px;
+            flex: 1;
+        }
+
+        .gallery-item {
+            background-color: #2a2836;
+            padding: 20px;
+            border-radius: 8px;
+            width: 45%;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery-item img:hover {
+            transform: scale(1.1);
+        }
+
+        .gallery-item h3 {
+            font-size: 1.5rem;
+            color: #e9e32d;
+            margin-top: 10px;
+        }
+
+        .gallery-item p {
+            font-size: 1rem;
+            color: #f0f0f0;
+            margin: 10px 0;
+        }
+
+        footer {
+            background-color: #1d1927;
+            text-align: center;
+            padding: 10px;
+            color: #e9e32d;
+            margin-top: auto;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Gallery</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="sports.html">Sports</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="table.html">Table</a>
+    </nav>
+
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img src="images/Arena Pictures _ Freepik.jpg" alt="Basketball">
+            <h3>Basketball</h3>
+            <p>Basketball is a fast-paced sport played between two teams of five players each. The objective is to score by shooting a ball through the opposing team's hoop. It is popular worldwide, particularly in the U.S. and China.</p>
+            <p><strong>Location:</strong> United States</p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/ronaldo desktop wallpaper 💗💗.jpg" alt="Football">
+            <h3>Football</h3>
+            <p>Football, also known as soccer in some countries, is a team sport where two teams of eleven players aim to score by kicking a ball into the opposing goal. It is the most popular sport globally.</p>
+            <p><strong>Location:</strong> Worldwide</p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/swimming.jpg" alt="Swimming">
+            <h3>Swimming</h3>
+            <p>Swimming is a sport and recreational activity that involves moving through water using arms and legs. It is an Olympic sport, and its forms include freestyle, breaststroke, backstroke, and butterfly.</p>
+            <p><strong>Location:</strong> Worldwide</p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/Premium Vector _ 3d championship font with faceless cricket players in action pose on blue stadium lights background.jpg" alt="Cricket">
+            <h3>Cricket</h3>
+            <p>Cricket is a bat-and-ball game played between two teams of eleven players. It is particularly popular in South Asia, Australia, and England. The objective is to score runs by hitting the ball and running between wickets.</p>
+            <p><strong>Location:</strong> India, Australia, England</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Sports Hub. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

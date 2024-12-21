@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1d1927;
+    color: white;
+}
+
+header {
+            background-color: #e9e32d;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+nav {
+    background-color: #1d1927;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+nav a {
+    color: #e9e32d;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #e9e32d;
+    color: #1d1927;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+}
+
+footer {
+            background-color: #1d1927;
+            text-align: center;
+            padding: 10px;
+            color: #e9e32d;
+        }
+
+form input, form select, form textarea {
+    background-color: #e9e32d;
+    color: #1d1927;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    width: 100%;
+}
+
+form button {
+    background-color: #e9e32d;
+    color: #1d1927;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+form button:hover {
+    background-color: #1d1927;
+    color: #e9e32d;
+}
+
+section.white-background {
+    background-color: white;
+    color: #1d1927;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+</style>
+<script>
+    document.getElementById("contactForm").addEventListener("submit", function (event) {
+    event.preventDefault();
+    const name = document.getElementById("name").value;
+    const sport = document.getElementById("sport").value;
+    document.getElementById("responseMessage").textContent = `Thank you, ${name}! We appreciate your love for ${sport}.`;
+});
+</script>
+<body>
+    <header><h1>Contact Us</h1></header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="sports.html">Sports</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="table.html">Table</a>
+    </nav>
+    <section>
+        <h1>Contact Us</h1>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="sport">Favorite Sport:</label>
+            <select id="sport" name="sport">
+                <option>Football</option>
+                <option>Basketball</option>
+                <option>Cricket</option>
+                <option>Tennis</option>
+            </select>
+            <br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="responseMessage"></p>
+    </section>
+    <footer>© 2024 All Sports | All Rights Reserved</footer>
+</body>
+</html>

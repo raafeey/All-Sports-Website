@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1d1927;
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #e9e32d;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        nav {
+            background-color: #1d1927;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #e9e32d;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .table-container {
+            padding: 20px;
+            margin-top: 20px;
+            flex: 1;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #2a2836;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #e9e32d;
+            font-size: 1.1rem;
+        }
+
+        th {
+            background-color: #e9e32d;
+            color: #1d1927;
+        }
+
+        tr:nth-child(even) {
+            background-color: #3c3849;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #2a2836;
+        }
+
+        tr:hover {
+            background-color: #4f4a5a;
+        }
+
+        footer {
+            background-color: #1d1927;
+            text-align: center;
+            padding: 10px;
+            color: #e9e32d;
+             
+            margin-top: auto;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sports Table</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="sports.html">Sports</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="table.html">Table</a>
+    </nav>
+
+    <div class="table-container">
+        <h2>Overview of Popular Sports</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Sport</th>
+                    <th>Equipment</th>
+                    <th>Rules</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Basketball</td>
+                    <td>Basketball, hoop, court</td>
+                    <td>Score by shooting the ball into the opposing team’s hoop. The team with the most points wins.</td>
+                </tr>
+                <tr>
+                    <td>Football</td>
+                    <td>Football, goalposts, cleats</td>
+                    <td>Teams of 11 try to score by kicking the ball into the opposing team’s goal. Most goals win.</td>
+                </tr>
+                <tr>
+                    <td>Swimming</td>
+                    <td>Swimsuit, goggles, swimming pool</td>
+                    <td>Swim laps in a pool. First to finish wins the race in various styles: freestyle, breaststroke, backstroke, and butterfly.</td>
+                </tr>
+                <tr>
+                    <td>Cricket</td>
+                    <td>Bat, ball, wickets, gloves</td>
+                    <td>Score runs by hitting the ball and running between wickets. The team with the most runs wins.</td>
+                </tr>
+                <tr>
+                    <td>Tennis</td>
+                    <td>Tennis racket, ball, tennis court</td>
+                    <td>Two or four players hit the ball over a net. Points are won when the opponent fails to return the ball within the bounds.</td>
+                </tr>
+                <tr>
+                    <td>Volleyball</td>
+                    <td>Volleyball, net, court</td>
+                    <td>Two teams hit the ball over the net. A team scores a point when the ball lands in the opposing team’s court.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Sports Hub. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
